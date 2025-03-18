@@ -113,7 +113,7 @@ Input:Enter the number: 5
 Output:5 th term :14
 ```
 **3.Anagrams**:
-**Problem**:
+ **Problem**:
 Write a C program to check whether two given strings are anagrams of each other.
 Two strings are anagrams if they contain the same characters in the same frequency but in a different order.
 The program should take two strings as input and determine whether they are anagrams.
@@ -180,8 +180,8 @@ Output:
 Both are anagrams
 ```
 **4.Nives number**:
-
-**Problem**:
+ 
+ **Problem**:
 Write a C program to check whether a given number is a Niven number or not.
   A Niven number (also known as a Harshad number) is a number that is divisible by the sum of its digits.
   The program should take an integer input and determine whether it is a Niven number.
