@@ -112,3 +112,69 @@ return 0;
 Input:Enter the number: 5
 Output:5 th term :14
 ```
+**3.Anagrams**:
+Write a C program to check whether two given strings are anagrams of each other.
+Two strings are anagrams if they contain the same characters in the same frequency but in a different order.
+The program should take two strings as input and determine whether they are anagrams.
+
+**Algorithm**:
+1.Start the program.
+2.Declare a function isanagram(char s1[], char s2[]) that checks if two strings are anagrams.
+3.Inside the function:
+  Create an integer array c[256] initialized to zero to store character frequencies.
+  If the lengths of s1 and s2 are not the same, return false.
+  Traverse both strings simultaneously:
+    Increment the count for characters in s1.
+    Decrement the count for characters in s2.
+  If all values in the frequency array remain zero, return true (they are anagrams). Otherwise, return false.
+4.In the main() function:
+  Take input for two strings from the user.
+  Call the isanagram() function with the input strings.
+5.Print "Both are anagrams" if the function returns true, otherwise print "Not anagrams".
+6.End the program.
+**Code**:
+```c
+#include <stdio.h>
+#include<string.h>
+#include<stdbool.h>
+bool isanagram(char s1[], char s2[]){
+    int c[256]={0};
+    int i;
+    if(strlen(s1)!=strlen(s2)){
+        return false;
+    }
+    for(i=0;i<s1[i] && s2[i];i++){
+        c[(int)s1[i]]++;
+         c[(int)s2[i]]--;
+    }
+    for(i=0;i<256;i++){
+        if(c[i]!=0){
+        return false;
+    }
+    }
+    return true;
+}
+int main()
+{
+char s1[100],s2[100];
+printf("Enter the first string" );
+scanf("%s",s1);
+printf("enter second string");
+scanf("%s",s2);
+if(isanagram(s1,s2)){
+    printf("both are anagrams");
+}
+else{
+    printf("Not anagrams");
+}
+    return 0;
+}
+```
+**Sample**:
+```
+Input:
+Enter the first string: listen
+Enter the second string: silent
+Output:
+Both are anagrams
+```
