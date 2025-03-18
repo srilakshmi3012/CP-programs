@@ -72,7 +72,8 @@ Output:
 time estimate: 35mins
 ```
 **2.Series of multiples**:
-**Problem**:
+
+ **Problem**:
 Write a C program that calculates and prints the Nth term of a series based on the given pattern. The series follows these rules:
 If the position (N) is odd, the value is determined using the formula: 7 × (N/2)
 If the position (N) is even, the value is determined using the formula: 6 × (N/2 - 1)
@@ -113,6 +114,7 @@ Input:Enter the number: 5
 Output:5 th term :14
 ```
 **3.Anagrams**:
+
  **Problem**:
 Write a C program to check whether two given strings are anagrams of each other.
 Two strings are anagrams if they contain the same characters in the same frequency but in a different order.
@@ -227,7 +229,7 @@ Output:18 is a Niven Number
 ```
 **5.Abscedarian**:
 
-**Problem**:
+ **Problem**:
 Write a C program that takes two strings as input and combines them by interleaving characters from the first string with the second string.
 **Algorithm**:
 1.Start the program.
