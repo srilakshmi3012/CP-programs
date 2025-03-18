@@ -180,6 +180,7 @@ Output:
 Both are anagrams
 ```
 **4.Nives number**:
+
 **Problem**:
 Write a C program to check whether a given number is a Niven number or not.
   A Niven number (also known as a Harshad number) is a number that is divisible by the sum of its digits.
@@ -225,6 +226,7 @@ Input:Enter a number: 18
 Output:18 is a Niven Number
 ```
 **5.Abscedarian**:
+
 **Problem**:
 Write a C program that takes two strings as input and combines them by interleaving characters from the first string with the second string.
 **Algorithm**:
