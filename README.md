@@ -224,3 +224,46 @@ while(n>0){
 Input:Enter a number: 18
 Output:18 is a Niven Number
 ```
+**5.Abscedarian**:
+**Problem**:
+Write a C program that takes two strings as input and combines them by interleaving characters from the first string with the second string.
+**Algorithm**:
+1.Start the program.
+2.Declare three character arrays:
+  s1 (first string)
+  s2 (second string)
+  out (output string)
+3.Take input for s1 and s2 from the user.
+4.Iterate through each character of s1:
+  Use snprintf(out, sizeof(out), "%c%s ", s1[i], s2); to concatenate each character of s1 with s2.
+  Print the result.
+5.Print a newline for formatting.
+6.End the program.
+**Code**:
+```c
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+ char s1[100],s2[100];
+ char out[100];
+printf("Enter the first string" );
+scanf("%s",s1);
+printf("enter second string");
+scanf("%s",s2);
+ for (int i = 0; i<strlen(s1); i++) {
+snprintf(out,sizeof(out),"%c%s ",s1[i],s2);
+printf("%s",out);
+  }
+printf("\n");
+ return 0;
+}
+```
+**Sample Input and Output**:
+```c
+Input:
+Enter the first string: abc
+Enter the second string: xyz
+Output:
+axyz bxyz cxyz
+```
